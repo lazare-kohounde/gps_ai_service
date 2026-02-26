@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+Sentence-Transformers
+faiss-cpu
+scikit-learn
+pandas
+textblob
