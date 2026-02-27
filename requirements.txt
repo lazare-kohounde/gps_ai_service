@@ -5,4 +5,5 @@ Sentence-Transformers
 faiss-cpu
 scikit-learn
 pandas
+ollama
 textblob
