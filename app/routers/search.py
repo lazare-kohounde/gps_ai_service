@@ -4,7 +4,7 @@ from typing import Optional, List
 from app.services.vector_service import vector_db
 from app.services.llm_service import generate_solution_from_history
 
-router = APIRouter()
+router = APIRouter(prefix="/search", tags=["RAG Search"])
 
 class SearchRequest(BaseModel):
     texte_actuel: str

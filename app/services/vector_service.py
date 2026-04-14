@@ -7,12 +7,8 @@ from sentence_transformers import SentenceTransformer
 
 # Définition du chemin absolu vers nos fausses données générées précédemment
 # Ajusté pour pointer vers les artifacts du workspace
-MOCK_DATA_PATH = os.path.join(
-    os.path.expanduser("~"), 
-    ".gemini", "antigravity", "brain", 
-    "e5b93cae-4fe4-4958-b21b-a2f679648c79", 
-    "plaintes_fictives_test.json"
-)
+# Définition du chemin vers les données de test locales
+MOCK_DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "plaintes_fictives.json")
 
 class VectorSearchService:
     def __init__(self, model_name: str = 'paraphrase-multilingual-MiniLM-L12-v2'):
